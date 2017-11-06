@@ -1,0 +1,62 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+h2{
+    text-align: center;
+}
+
+.modal-dialog{
+    margin-top: 100px;
+}
+
+.modal-header{
+    height:50px;
+    background: #222222; 
+    img{
+        position: absolute;
+        top: -11px;
+        margin-left: 20px;
+    }
+}
+
+.modal-body{
+    background-color: #f4f4f4;
+}
+
+.modal-close{
+    background-image: url("/img/cross.png");
+    background-repeat: no-repeat;
+    background-color: #222222;
+    background-position: 12px 12px;
+    height:43px;
+    width: 56px;
+    border:none;
+    position: absolute;
+    top: -43px;
+    right: 0px;
+
+    &:before{
+        height: 0;
+        width: 0;
+        content: "";
+        display: block;
+        position: relative;
+        border-bottom: 42px solid #222222;
+        border-left: 25px solid transparent;
+        left: -31px;
+    }
+}
+
+#odds-converter{
+    input[type='text']{
+        width:100%;
+    }
+}
+
